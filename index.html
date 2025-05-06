@@ -3,87 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alfonso Camarillo | Data & Cloud Enthusiast</title>
+  <title>Alfonso Camarillo | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5a3a9.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 2rem;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4fc;
+      color: #1e3a8a;
     }
     header {
+      background: #1e3a8a;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      margin-bottom: 2rem;
+    }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-top: 1rem;
+      border: 4px solid white;
     }
     h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      margin: 0.5rem 0;
     }
-    p.subtitle {
-      color: #666;
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .social {
+    .buttons {
       margin-top: 1rem;
     }
-    .social a {
-      margin-right: 1rem;
+    .buttons a {
+      margin: 0 10px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: white;
+      color: #1e3a8a;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #3b82f6;
+      color: white;
+    }
+    section {
+      padding: 2rem 4rem;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .project-item {
+      margin-bottom: 1.5rem;
+    }
+    .project-item img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Alfonso Camarillo</h1>
-    <p class="subtitle">Data Analyst | Software Tester | AWS Cloud Enthusiast</p>
+    <p>Data Analyst | Machine Learning Enthusiast</p>
+    <img src="yo.jpg" alt="Alfonso Camarillo">
+    <div class="buttons">
+      <a href="https://github.com/alfonsocamarillo" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/alfonso-camarillo/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
   </header>
 
   <section>
-    <h2>About Me</h2>
+    <div class="section-title">About Me</div>
     <p>
-      I’m an engineer passionate about solving real-world problems through data analysis, testing, and cloud technologies. 
-      With a foundation in Electrical-Electronic Engineering, I’ve transitioned into the tech industry with a focus on delivering 
-      reliable software, clean data insights, and process improvements. Currently learning and building on AWS.
+      Soy un ingeniero apasionado por los datos con experiencia en análisis, automatización y visualización. Manejo herramientas como Python, SQL, Tableau y Power BI para transformar información en decisiones estratégicas. Tengo un enfoque orientado a resultados, con mentalidad analítica y habilidades para resolver problemas y optimizar procesos.
     </p>
-
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#">Data Cleaning & Analysis with Python and Pandas</a></li>
-      <li><a href="#">Manual & Automated QA Testing Workflow (Selenium)</a></li>
-      <li><a href="#">Power BI Dashboard for Industrial Maintenance</a></li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <ul>
-      <li>Six Sigma Black Belt</li>
-      <li>Diploma in Data Science & Applied Statistics</li>
-      <li>AWS (In progress)</li>
-    </ul>
-
-    <h2>Connect</h2>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/alfonso-camarillo/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/alfonsocamarillo" target="_blank">GitHub</a>
-      <a href="mailto:alfonso.camarillo.0@gmail.com">Email</a>
-    </div>
   </section>
+
+  <section>
+    <div class="section-title">Projects</div>
+    <div class="project-item">
+      <h3>Dashboard de ventas en Power BI</h3>
+      <p>Diseño de visualizaciones dinámicas para análisis de métricas clave del negocio.</p>
+      <img src="img/powerbi1.png" alt="Proyecto Power BI">
+    </div>
+    <div class="project-item">
+      <h3>Predicción de temperatura corporal</h3>
+      <p>Modelo predictivo con machine learning para clasificación médica usando scikit-learn.</p>
+      <img src="img/ml_temp.png" alt="Machine Learning">
+    </div>
+    <!-- Agrega más proyectos si deseas -->
+  </section>
+
+  <section>
+    <div class="section-title">Skills & Certifications</div>
+    <ul>
+      <li><strong>Lenguajes:</strong> Python, R, SQL</li>
+      <li><strong>Herramientas:</strong> Power BI, Tableau, Excel, Git</li>
+      <li><strong>Testing:</strong> Selenium, Cypress</li>
+      <li><strong>Machine Learning:</strong> Scikit-learn, pandas, modelos supervisados y no supervisados</li>
+      <li><strong>Bases de datos:</strong> SQL Server, PostgreSQL, MySQL</li>
+      <li><strong>Certificaciones:</strong>
+        <ul>
+          <li>Six Sigma Black Belt</li>
+          <li>Machine Learning – IBM (Coursera)</li>
+          <li>AWS Cloud Practitioner (en curso)</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Contacto: alfonso.camarillo.0@gmail.com — © 2025 Alfonso Camarillo
+  </footer>
 </body>
 </html>
